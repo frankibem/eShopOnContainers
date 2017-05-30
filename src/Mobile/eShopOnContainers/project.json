@@ -1,0 +1,21 @@
+﻿{
+  "dependencies": {
+    "Acr.UserDialogs": "6.3.3",
+    "Autofac": "4.6.0",
+    "IdentityModel": "2.8.1",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "1.6.1",
+    "Newtonsoft.Json": "10.0.2",
+    "SlideOverKit": "2.1.4",
+    "Xam.Plugins.Settings": "2.5.8",
+    "Xamarin.FFImageLoading.Forms": "2.2.9",
+    "Xamarin.Forms": "2.3.4.224",
+    "Xamarin.Forms.Pages": "2.3.4.224",
+    "Xamarin.Forms.Theme.Light": "1.0.0.43-pre1"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "portable-net45+win8+wpa81+wp8"
+    }
+  }
+}

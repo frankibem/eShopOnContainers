@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-Identity.API-d3518aae-d45e-42fa-b6ec-2bec1613fd21</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Certificate\idsrv3test.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\fonts\Montserrat-Bold.eot" />
+    <Content Include="wwwroot\fonts\Montserrat-Bold.svg" />
+    <Content Include="wwwroot\fonts\Montserrat-Bold.ttf" />
+    <Content Include="wwwroot\fonts\Montserrat-Bold.woff" />
+    <Content Include="wwwroot\fonts\Montserrat-Bold.woff2" />
+    <Content Include="wwwroot\fonts\Montserrat-Regular.eot" />
+    <Content Include="wwwroot\fonts\Montserrat-Regular.svg" />
+    <Content Include="wwwroot\fonts\Montserrat-Regular.ttf" />
+    <Content Include="wwwroot\fonts\Montserrat-Regular.woff" />
+    <Content Include="wwwroot\fonts\Montserrat-Regular.woff2" />
+    <Content Include="wwwroot\icon.jpg" />
+    <Content Include="wwwroot\icon.png" />
+    <Content Include="wwwroot\images\arrow-down.png" />
+    <Content Include="wwwroot\images\arrow-right.svg" />
+    <Content Include="wwwroot\images\banner1.svg" />
+    <Content Include="wwwroot\images\banner2.svg" />
+    <Content Include="wwwroot\images\banner3.svg" />
+    <Content Include="wwwroot\images\banner4.svg" />
+    <Content Include="wwwroot\images\brand.PNG" />
+    <Content Include="wwwroot\images\brand_dark.PNG" />
+    <Content Include="wwwroot\images\cart.png" />
+    <Content Include="wwwroot\images\logout.PNG" />
+    <Content Include="wwwroot\images\main_banner.png" />
+    <Content Include="wwwroot\images\main_banner_text.png" />
+    <Content Include="wwwroot\images\main_banner_text.svg" />
+    <Content Include="wwwroot\images\my_orders.PNG" />
+    <Content Include="wwwroot\images\refresh.svg" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="1.5.1" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="1.0.1" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="1.0.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Certificate\idsrv3test.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Consent\" />
+  </ItemGroup>
+
+</Project>
