@@ -13,7 +13,9 @@ namespace Catalog.API.Infrastructure
         public static async Task SeedAsync(IApplicationBuilder applicationBuilder, ILoggerFactory loggerFactory, int? retry = 0)
         {
             var context = (CatalogContext)applicationBuilder.ApplicationServices.GetService(typeof(CatalogContext));
-            context.Database.Migrate();
+            //context.Database.Migrate();
+            if (!(await context.Database.EnsureCreatedAsync()))
+                return;
 
             if (!context.CatalogBrands.Any())
             {

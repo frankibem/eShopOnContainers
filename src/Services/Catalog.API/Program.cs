@@ -17,6 +17,7 @@ namespace Catalog.API
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5101")
                 .UseApplicationInsights()
                 .Build();
 

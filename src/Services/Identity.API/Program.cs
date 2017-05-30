@@ -12,10 +12,11 @@ namespace Identity.API
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
-                .UseKestrel()                
+                .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5105")
                 .Build();
 
             host.Run();
