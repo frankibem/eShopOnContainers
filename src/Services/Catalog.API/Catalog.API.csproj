@@ -33,7 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Update="Pics\*">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -18,7 +18,8 @@ namespace Catalog.API.Controllers
         public IActionResult GetImage(int id)
         {
             var webroot = _env.WebRootPath;
-            var path = Path.Combine(webroot, id + ".png");
+            //var path = Path.Combine(webroot, id + ".png");
+            var path = Path.Combine(_env.ContentRootPath, "Pics", id + ".png");
 
             var buffer = System.IO.File.ReadAllBytes(path);
             return File(buffer, "image/png");

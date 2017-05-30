@@ -3,13 +3,13 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { SharedModule } from "../shared/shared.module";
 import { CatalogComponent } from "./catalog.component";
+import { CatalogService } from "./catalog.service";
 import { PagerComponent } from "../shared/components/pager/pager.component";
 
 @NgModule({
   imports: [
-    BrowserModule,
-    SharedModule
-  ],
-  declarations: [CatalogComponent]
+    BrowserModule, SharedModule],
+    declarations: [CatalogComponent],
+    providers: [CatalogService]
 })
 export class CatalogModule { }
