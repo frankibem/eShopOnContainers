@@ -17,6 +17,7 @@ namespace WebSPA
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                .UseUrls("http://localhost:5104")
                 .Build();
 
             host.Run();

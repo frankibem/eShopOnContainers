@@ -23,7 +23,7 @@ export class IdentityComponent implements OnInit {
         });
 
         if (window.location.hash) {
-            this.service.AuthorizeCallback();
+            this.service.AuthorizedCallback();
         }
 
         console.log('identity component, checking authorized: ' + this.service.IsAuthorized);

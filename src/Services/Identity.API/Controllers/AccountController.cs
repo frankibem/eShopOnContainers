@@ -19,7 +19,6 @@ using IdentityServer4.Stores;
 
 namespace Identity.API.Controllers
 {
-    [Authorize]
     public class AccountController : Controller
     {
         private readonly ILoginService<ApplicationUser> _loginService;
